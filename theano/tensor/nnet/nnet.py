@@ -2423,7 +2423,7 @@ def h_softmax(x, batch_size, n_outputs, n_classes, n_outputs_per_class,
 
 def elu(x, alpha=1):
     """
-    Compute the element-wise exponential linear activation function [2]_.
+    Compute the element-wise exponential linear activation function [CLEVERT2015]_.
 
     .. versionadded:: 0.8.0
 
@@ -2441,7 +2441,7 @@ def elu(x, alpha=1):
 
     References
     -----
-    .. [2] Djork-Arne Clevert,  Thomas Unterthiner, Sepp Hochreiter
+    .. [CLEVERT2015] Djork-Arne Clevert,  Thomas Unterthiner, Sepp Hochreiter
         "Fast and Accurate Deep Network Learning by
         Exponential Linear Units (ELUs)" <http://arxiv.org/abs/1511.07289>`.
     """
@@ -2449,7 +2449,7 @@ def elu(x, alpha=1):
 
 
 def selu(x):
-    """Compute the element-wise Scaled Exponential Linear unit [3]_.
+    """Compute the element-wise Scaled Exponential Linear unit [KLAMBAUER2017]_.
 
     .. versionadded:: 0.9.0
 
@@ -2465,7 +2465,7 @@ def selu(x):
 
     References
     ----------
-    .. [3] Klambauer G, Unterthiner T, Mayr A, Hochreiter S.
+    .. [KLAMBAUER2017] Klambauer G, Unterthiner T, Mayr A, Hochreiter S.
         "Self-Normalizing Neural Networks" <https://arxiv.org/abs/1706.02515>
     """
     alpha = 1.6732632423543772848170429916717
